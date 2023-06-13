@@ -8,6 +8,9 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": ">=14.20.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,8 +23,5 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.2.2",
     "nodemon": "^2.0.22"
-  },
-  "engines": {
-    "node": ">=14.20.1"
   }
 }
