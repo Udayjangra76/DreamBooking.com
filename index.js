@@ -27,7 +27,7 @@ mongoose.connection.on("disconnected", () => {
 });
 
 
-var allowedDomains = ['http://localhost:3000', 'https://dreambooking-com.onrender.com'];
+var allowedDomains = ['https://dreambookingadmin.netlify.app', 'https://dreambooking-com.netlify.app'];
 app.use(cors({
     origin: function (origin, callback) {
         // bypass the requests with no origin (like curl requests, mobile apps, etc )
