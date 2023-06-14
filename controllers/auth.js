@@ -41,6 +41,9 @@ export const login = async (req, res, next) => {
 
         res.cookie("access_token", token, {
             httpOnly: true,
+             maxAge:3600000*5,
+             secure:true,
+             sameSite:'none',
         }).status(200).json({ detail: { ...otherDetails }, isAdmin });
     } catch (err) {
         next(err);
